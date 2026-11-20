@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de diseño responsivo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="pagina">
+        <header class="cabecera" id="inicio">
+            <h1 class="logo">HEADER</h1>
+            <nav class="menu-pc" aria-label="Menú principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#informacion">Información</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <details class="menu-movil">
+                <summary aria-label="Abrir o cerrar el menú"></summary>
+                <nav aria-label="Menú para móviles">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#informacion">Información</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+            </details>
+        </header>
+        <main>
+            <section class="hero" aria-labelledby="titulo-hero">
+                <h2 id="titulo-hero">HERO SECTION</h2>
+                <p>Título principal y descripción del proyecto</p>
+                <a href="#servicios" class="boton">BOTÓN CTA</a>
+            </section>
+            <section class="tarjetas" id="servicios" aria-label="Tarjetas de servicios">
+                <article class="tarjeta">
+                    <h3>CARD 1</h3>
+                    <p>Descripción del contenido</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>CARD 2</h3>
+                    <p>Descripción del contenido</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>CARD 3</h3>
+                    <p>Descripción del contenido</p>
+                </article>
+                <article class="tarjeta tarjeta-cuatro">
+                    <h3>CARD 4</h3>
+                    <p>Descripción del contenido</p>
+                </article>
+            </section>
+            <section class="informacion" id="informacion" aria-labelledby="titulo-info">
+                <h2 id="titulo-info">
+                    <span class="titulo-grande">ABOUT / INFORMACIÓN</span>
+                    <span class="titulo-celular">ABOUT</span>
+                </h2>
+                <div class="imagen-ejemplo">
+                    <img src="imagen/jimin.png" alt="Jimin">
+                </div>
+                <p>Descripción e información</p>
+            </section>
+            <section class="contacto" id="contacto" aria-label="Llamado a la acción">
+                <h2>CALL TO ACTION</h2>
+            </section>
+        </main>
+        <footer class="pie">
+            <strong>FOOTER</strong>
+            <p>Enlaces · Redes · Contacto</p>
+        </footer>
+    </div>
+</body>
+</html>

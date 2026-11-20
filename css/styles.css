@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+.pagina {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5px;
+}
+.cabecera, .hero, .tarjeta, .informacion, .contacto, .pie {
+    border-radius: 5px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px 0;
+}
+.cabecera {
+    min-height: 50px;
+    padding: 10px 14px;
+    color: white;
+    background-color: #324254;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.logo {
+    margin: 0;
+    font-size: 17px;
+    font-weight: normal;
+}
+.menu-pc {
+    display: none;
+}
+.menu-movil summary {
+    cursor: pointer;
+    list-style: none;
+    font-size: 19px;
+}
+.menu-movil nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: #324254;
+    padding: 12px;
+    border-radius: 0 0 5px 5px;
+    z-index: 1;
+}
+.menu-movil nav a {
+    display: block;
+    padding: 9px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.hero {
+    background-color: #daebfc;
+    color: #0f377b;
+    text-align: center;
+    padding: 22px 12px;
+}
+.boton {
+    display: block;
+    background-color: #285ddd;
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    padding: 11px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.tarjetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+.tarjeta {
+    background-color: #dcfce9;
+    color: #0c6b3a;
+    text-align: center;
+    padding: 18px 10px;
+}
+.tarjeta h3 {
+    font-size: 15px;
+    margin: 0 0 7px;
+}
+.tarjeta p {
+    font-size: 11px;
+    margin: 0;
+}
+.informacion {
+    background-color: #f3e8ff;
+    color: #6d25a9;
+    padding: 15px 11px;
+    text-align: center;
+}
+.informacion h2 {
+    font-size: 15px;
+    margin: 0 0 8px;
+}
+.imagen-ejemplo {
+    background-color: #e1d7ff;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+.imagen-ejemplo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.informacion p {
+    font-size: 11px;
+    margin: 0;
+}
+.contacto {
+    padding: 20px;
+    background-color: #fff2c7;
+    color: #995211;
+    text-align: center;
+}
+.contacto h2 {
+    font-size: 14px;
+    margin: 0;
+}
+.pie {
+    padding: 19px 10px;
+    background-color: #324254;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+.pie p {
+    margin: 9px 0 0;
+    color: #c3ccd8;
+    font-size: 11px;
+}
+@media (min-width: 768px) {
+    .cabecera {
+        min-height: 60px;
+    }
+    .hero {
+        padding: 30px 15px;
+    }
+    .hero h2 {
+        font-size: 20px;
+    }
+    .hero p {
+        font-size: 13px;
+    }
+    .boton {
+        display: inline-block;
+        padding: 10px 17px;
+    }
+    .tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tarjeta {
+        padding: 24px 12px;
+    }
+    .tarjeta p {
+        display: none;
+    }
+    .tarjeta-cuatro {
+        display: block;
+    }
+    .titulo-grande {
+        display: inline;
+    }
+    .titulo-celular, .imagen-ejemplo, .informacion p {
+        display: none;
+    }
+    .informacion {
+        padding: 25px;
+    }
+    .informacion h2 {
+        font-size: 17px;
+        margin: 0;
+    }
+}
+@media (min-width: 1024px) {
+    .cabecera {
+        min-height: 65px;
+        justify-content: center;
+        gap: 20px;
+    }
+    .logo {
+        font-size: 17px;
+    }
+    .menu-pc {
+        display: flex;
+        gap: 17px;
+    }
+    .menu-pc a {
+        font-size: 13px;
+        text-decoration: none;
+        color: white;
+    }
+    .menu-movil {
+        display: none;
+    }
+    .hero {
+        padding: 35px 15px;
+    }
+    .tarjetas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .tarjeta {
+        padding: 29px 12px;
+    }
+    .tarjeta-cuatro {
+        display: none;
+    }
+    .contacto {
+        padding: 25px;
+    }
+}
